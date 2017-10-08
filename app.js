@@ -19,6 +19,6 @@ todoController(app);
 
 
 //listen to a port
-app.listen(3000);
+app.listen(process.env.port||3000);
 console.log('You are listening to port 3000');
 
