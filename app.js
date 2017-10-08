@@ -19,5 +19,9 @@ todoController(app);
 
 
 //listen to a port
-app.listen(process.env.port||3000);
+http.listen(process.env.PORT || 3000, function(){
+  console.log('listening on', http.address().port);
+});
+
+
 
